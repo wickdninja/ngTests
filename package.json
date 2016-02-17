@@ -1,0 +1,26 @@
+{
+    "version": "0.0.1",
+    "name": "smallbiz",
+    "scripts": {
+        "prestart": "npm install",
+        "test": "karma start karma.conf.js",
+        "test-single-run": "karma start karma.conf.js  --single-run",
+        "preupdate-webdriver": "npm install",
+        "update-webdriver": "webdriver-manager update",
+        "preprotractor": "npm run update-webdriver",
+        "protractor": "protractor tests/e2e-tests/protractor.conf.js"
+    },
+    "author": "Nate Ross <nate.ross>",
+    "devDependencies": {
+        "jasmine-core": "^2.3.4",
+        "karma": "~0.12",
+        "karma-chrome-launcher": "^0.1.12",
+        "karma-firefox-launcher": "^0.1.6",
+        "karma-jasmine": "^0.3.5",
+        "karma-junit-reporter": "^0.2.2",
+        "karma-phantomjs-launcher": "^0.2.0",
+        "phantomjs": "*",
+        "protractor": "^2.1.0",
+        "shelljs": "^0.5.1"
+    }
+}
